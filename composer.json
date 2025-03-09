@@ -1,0 +1,18 @@
+{
+  "name": "brackets_test/run",
+  "description": "Bracket Validator",
+  "version": "1.0.0",
+  "require-dev": {
+    "phpunit/phpunit": "^9.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Validator\\": "."
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "."
+    }
+  }
+}

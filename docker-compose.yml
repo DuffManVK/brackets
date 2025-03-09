@@ -1,0 +1,16 @@
+services:
+  brackets:
+    build: .
+    command: php run.php
+  phpunit:
+    image: php:8.0-cli
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: phpunit tests.php
+  bash:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: bash
